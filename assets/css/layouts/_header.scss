@@ -1,0 +1,64 @@
+.header-area{
+    // display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 0;
+    z-index: 999;
+
+    .logo{
+        a{
+            display: inline-block;
+            color: $white;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: 1px solid $white;
+            padding: 10px 15px;
+
+            @include min-sm{
+                padding: 8px 12px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .menu{
+        @include min-md{
+            display: none;
+        }
+
+        @include max-xs{
+            display: none;
+        }
+        ul{
+            li{
+                a{
+                    display: block;
+                    font-size: 16px;
+                    color: $white;
+                    margin-right: 15px;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    font-weight: 600;
+
+                    @include min-md{
+                        font-size: 14px;
+                        margin-right: 10px;
+                    }
+
+                    &:hover{
+                        color: $hover_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include min-sm{
+    .menu{
+        display: none;
+    }
+}

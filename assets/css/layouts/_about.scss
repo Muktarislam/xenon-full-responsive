@@ -1,0 +1,81 @@
+.about-area{
+
+    @include min-sm{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    img{
+        @include min-md{
+            margin-left: 10%;
+        }
+    }
+    .about-content{
+        h2{
+            font-size: 50px;
+            line-height: 60px;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: $heding_color;
+    
+            @include min-md{
+                font-size: 40px;
+                margin-top: 30px;
+                text-align: center;
+            }
+            @include min-sm{
+                font-size: 30px;
+                margin-top: 30px;
+                text-align: center;
+            }
+            @include max-xs{
+                font-size: 30px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    
+        h4{
+            font-size: 20px;
+            text-transform: capitalize;
+    
+            @include min-md{
+                text-align: center;
+            }
+
+            @include min-sm{
+                font-size: 18px;
+                text-align: center;
+            }
+
+            @include max-xs{
+                font-size: 16px;
+                margin-top: 10px;
+                line-height: 0;
+                text-align: center;
+            }
+        }
+    
+        .row{
+            ul{
+
+                @include max-xs{
+                    margin-left: 3%;
+                }
+                li{
+                    text-transform: capitalize;
+                    font-size: 17px;
+            
+                    i{
+                        color: $primary_color;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+}

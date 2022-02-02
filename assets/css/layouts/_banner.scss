@@ -1,0 +1,51 @@
+.banner-area{
+    height: 100vh;
+
+    .banner-content{
+        h1{
+            font-size: 80px;
+            color: $white;
+            text-transform: capitalize;
+            font-weight: 700;
+            line-height: 100px;
+
+            @include min-md{
+                font-size: 50px;
+            }
+            @include min-sm{
+                font-size: 40px;
+            }
+
+            @include max-xs{
+                font-size: 32px;
+            }
+        }
+        h4{
+            color: $white;
+            text-transform: capitalize;
+            font-size: 25px;
+
+            @include min-md{
+                font-size: 20px;
+            }
+
+            @include min-sm{
+                font-size: 18px;
+            }
+            @include max-xs{
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            a {
+                margin: 30px 10px 0 5px;
+                transition: .3s;
+
+                @include min-sm{
+                    padding: 10px 15px;
+                    font-size: 15px;
+                }
+            }
+        }  
+    }
+}

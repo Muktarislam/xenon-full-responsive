@@ -1,0 +1,42 @@
+.counter-area{
+    background-color: #0f1113;
+    color: $white;
+
+    @include max-xs{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    @include min-sm{
+        padding-bottom: 40px;
+    }
+    .single-counter{
+        text-align: center;
+
+        @include min-sm{
+            margin-bottom: 40px;
+        }
+
+        @include max-xs{
+            margin-bottom: 30px;
+        }
+    
+        i{
+            font-size: 26px;
+            background-color: $primary_color;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 40px;
+            line-height: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    
+        p{
+            text-transform: capitalize;
+        }
+    }
+}
+

@@ -1,0 +1,118 @@
+.timeline-area{
+    .timeline-list{
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 100%;
+            background-color: $primary_color;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+
+            @include min-sm{
+              top: 0;
+              left: -5%;
+              bottom: 0;
+              height: 100%;
+            }
+            @include max-xs{
+              // top: 0;
+              left: 3%;
+              // bottom: 0;
+              // height: 100%;
+            }
+        }
+
+      li {
+          position: relative;
+          clear: both;
+          overflow: hidden;
+
+          @include min-sm{
+            overflow: visible;
+            margin-top: 20px;
+          }
+          @include max-xs{
+            overflow: visible;
+            margin-top: 20px;
+            margin-left: 10%;
+          }
+          &:after{
+              position: absolute;
+              content: "";
+              width: 20px;
+              height: 20px;
+              background-color: $primary_color;
+              border-radius: 50%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              @include min-sm{
+                top: 50%;
+                left: -5%;
+              }
+              @include max-xs{
+                top: 50%;
+                left: -8%;
+              }
+            }
+          }
+          &:nth-child(even){
+              .timeline-content{
+                  float: right;
+                  text-align: left;
+              }
+          }
+          .timeline-content {
+            border: 2px solid $primary_color;
+            padding: 20px;
+            float: left;
+            width: 45%;
+            text-align: right;
+
+            @include min-sm{
+              float: none;
+              text-align: left;
+            }
+            @include max-xs{
+              float: none;
+              text-align: left;
+            }
+
+            @include min-sm{
+              width: 100%;
+            }
+            @include max-xs{
+              width: 90%;
+            }
+            span {
+              font-size: 20px;
+              color: $primary_color;
+              font-weight: 600;
+
+              @include max-xs{
+                font-size: 18px;
+              }
+            }
+            h4 {
+              text-transform: capitalize;
+              font-size: 30px;
+              line-height: 45px;
+              margin-bottom: 5px;
+
+              @include max-xs{
+                font-size: 21px;
+                line-height: 35px;
+              }
+            }
+
+            p{
+              font-size: 13px;
+            }
+          }
+    }
+}

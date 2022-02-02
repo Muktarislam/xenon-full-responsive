@@ -1,0 +1,41 @@
+.cta-area{
+    text-align: center;
+    color: $white;
+
+    .container{
+        i{
+            color: $white;
+            font-size: 80px;
+            margin-bottom: 20px;
+    
+            @include min-sm{
+                font-size: 60px;
+            }
+
+            @include max-xs{
+                font-size: 55px;
+            }
+        }
+    
+        h4{
+            text-transform: capitalize;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 700;
+    
+            @include min-sm{
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+            @include max-xs{
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+    
+        p{
+            margin: 10px 0 25px;
+        }
+    }
+}
